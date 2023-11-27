@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            background-color: #f0f0f0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .data-display {
+            color: #333; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <div class="data-display">
+            <p>Name: {{ i['username'] }}</p>
+            <p>Age: {{ i['age'] }}</p>
+            <p>Date of Birth: {{ i['dob'] }}</p>
+            <p>Contact: {{ i['contact'] }}</p>
+        </div>
+    </div>
+</body>
+</html>
